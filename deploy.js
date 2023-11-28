@@ -3,6 +3,9 @@ const { Web3 } = require("web3");
 
 const { abi, evm } = require("./compile");
 
+// The url in below string is the Test Network's URL,
+// and the mnemonic phrase is of the account we want to connect.
+// We're storing it in the provider so that we can give this provider to the
 provider = new HDWalletProvider("YOUR_MNEMONIC_PHASES", "YOUR_INFURA_URL");
 
 const web3 = new Web3(provider);
